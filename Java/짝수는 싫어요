@@ -1,0 +1,16 @@
+class Solution {
+    public int[] solution(int n) {
+        // n 이하의 홀수의 개수를 계산
+        int count = (n + 1) / 2;
+        
+        // 결과를 저장할 배열을 선언
+        int[] answer = new int[count];
+        
+        // 배열에 홀수를 저장
+        for (int i = 0, num = 1; num <= n; i++, num += 2) {
+            answer[i] = num;
+        }
+        
+        return answer;
+    }
+}
